@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
-
-const 
- Button= () => {
+const Button = ({ color, showForm }) => {
   return (
     <div>
-    <button className="btn">Add Task</button>
+      <button className="btn" style={{ background: color }} onClick={showForm}>
+        Add Task
+      </button>
     </div>
-  )
-}
+  );
+};
 
 export default Button;
